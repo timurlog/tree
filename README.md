@@ -132,11 +132,24 @@ Here are the steps to follow to install `tree` on your local machine.
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Basic Syntax of `tree` Command in Linux
+# Basic Syntax of `tree` Command in Linux
 
    ```sh
    tree [options]
    ```
+
+# Options Available in `tree` Command in Linux
+
+| Options                    | Description                                                          |
+|----------------------------|----------------------------------------------------------------------|
+| `-help`                    | Show help                                                            |
+| `-version`                 | Outputs the version of the tree.                                     |
+| `directory name`           | Display the tree hierarchy of a directory.                           |
+| `-d`                       | List directories only.                                               |
+| `-t`                       | Sort the output by last modification time instead of alphabetically. |
+| `-s`                       | Print the size of each file along with the name.                     |
+| `-r`                       | Sort the output in reverse alphabetic order.                         |
+
 
 _For more examples, please refer to the [Documentation](https://www.geeksforgeeks.org/tree-command-unixlinux/)_
 

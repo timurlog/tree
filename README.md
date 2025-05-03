@@ -144,7 +144,7 @@ Execute this Command
 |----------------------------|----------------------------------------------------------------------|
 | `-help`                    | Show help                                                            |
 | `-version`                 | Outputs the version of the tree.                                     |
-| `-update`                 | Update tree                                                          |
+| `-update`                  | Update tree                                                          |
 | `directory name`           | Display the tree hierarchy of a directory.                           |
 | `-d`                       | List directories only.                                               |
 | `-t`                       | Sort the output by last modification time instead of alphabetically. |
@@ -163,8 +163,8 @@ _This project does not implement all the options available in the original `tree
 <!-- ROADMAP -->
 ## Roadmap
 
-- [x] Basic Syntax `tree [directorie]` Command in Linux
-- [ ] Basic Syntax of `tree [options]` Command in Linux
+- [x] Basic Syntax `tree [directorie]` Command
+- [ ] Basic Syntax of `tree [options]` Command
     - [ ] `-help`
     - [ ] `-version`
     - [ ] `-update`

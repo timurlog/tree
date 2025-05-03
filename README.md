@@ -89,14 +89,9 @@ Here's a blank template to get started. To avoid retyping too much info, do a se
 
 ### Built With
 
-* [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
+* [![C][C]][C-url]
+* [![Makefile][Makefile]][Makefile-url]
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -250,3 +245,7 @@ Project Link: [https://github.com/timurlog/tree](https://github.com/timurlog/tre
 [Bootstrap-url]: https://getbootstrap.com
 [JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
 [JQuery-url]: https://jquery.com 
+[C]: https://img.shields.io/badge/C-blue?style=for-the-badge&logo=c&logoColor=white
+[C-url]: https://www.c-language.org/ 
+[Makefile]: https://img.shields.io/badge/Makefile-0779c1?style=for-the-badge&logo=gnubash&logoColor=white
+[Makefile-url]: https://makefile.site/

@@ -91,6 +91,7 @@ Here's a blank template to get started. To avoid retyping too much info, do a se
 
 * [![C][C]][C-url]
 * [![Makefile][Makefile]][Makefile-url]
+* [![Shell][Shell]][Shell-url]
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -249,3 +250,5 @@ Project Link: [https://github.com/timurlog/tree](https://github.com/timurlog/tre
 [C-url]: https://www.c-language.org/ 
 [Makefile]: https://img.shields.io/badge/Makefile-0779c1?style=for-the-badge&logo=gnubash&logoColor=white
 [Makefile-url]: https://makefile.site/
+[Shell]: https://img.shields.io/badge/Shell-Bash-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white
+[Shell-url]: https://bash-shell.net/

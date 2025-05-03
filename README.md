@@ -132,13 +132,13 @@ Here are the steps to follow to install `tree` on your local machine.
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-# Basic Syntax of `tree` Command in Linux
+### Basic Syntax of `tree` Command in Linux
 
    ```sh
    tree [options]
    ```
 
-# Options Available in `tree` Command in Linux
+### Options Available in `tree` Command in Linux
 
 | Options                    | Description                                                          |
 |----------------------------|----------------------------------------------------------------------|

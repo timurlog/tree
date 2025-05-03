@@ -23,6 +23,7 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
+[![42 Profile][42]][42-url]
 
 
 <!-- PROJECT LOGO -->
@@ -215,6 +216,8 @@ Project Link: [https://github.com/timurlog/tree](https://github.com/timurlog/tre
 [issues-url]: https://github.com/timurlog/tree/issues
 [license-shield]: https://img.shields.io/badge/License-MIT-green?style=for-the-badge
 [license-url]: https://github.com/timurlog/tree/blob/main/LICENSE.txt
+[42]: https://img.shields.io/badge/42%20Profile-000000?style=for-the-badge&logo=42&logoColor=white
+[42-url]: https://profile.intra.42.fr/users/tilogie
 [product-screenshot]: assets/screenshot.png
 [C]: https://img.shields.io/badge/C-blue?style=for-the-badge&logo=c&logoColor=white
 [C-url]: https://www.c-language.org/ 

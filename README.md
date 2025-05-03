@@ -155,7 +155,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 - [ ] Basic Syntax of `tree [options]` Command in Linux
     - [ ] `-help`
     - [ ] `-version` Outputs the version of the tree.
-    - [ ] `-d` or `-dirs-only` List directories only.
+    - [ ] `-d` List directories only.
     - [ ] `-t` Sort the output by last modification time instead of alphabetically.
     - [ ] `-s` Print the size of each file along with the name.
     - [ ] `-r` Sort the output in reverse alphabetic order. 

@@ -15,7 +15,7 @@ cd temp_____ || exit
 rm -rf tree
 
 # download github
-git clone --recursive https://github.com/timurlog/tree.git > /dev/null 2>&1 || { echo "${RED}Cloning failed.${RESET}"; exit 1; }
+git clone --recursive https://github.com/timurlog/tree.git > /dev/null 2>&1 || { echo "\033[0;91mCloning failed.\033[0m"; exit 1; }
 
 cp -r tree "$HOME"
 
@@ -35,15 +35,15 @@ if [ "$(uname)" != "Darwin" ]; then
 	fi
 fi
 
-echo "${YELLOW}Adding alias tree in file: $RC_FILE${RESET}"
+echo "\033[1;33mTry to adding alias tree in file: $RC_FILE\033[0m"
 
 # set up the alias
 if ! grep "tree=" "$RC_FILE" &> /dev/null; then
-	echo -e "${YELLOW}Adding it...${RESET}"
+	echo -e "\033[1;33mAdding it...\033[0m"
 	printf "\nalias tree='%s/tree/tree'\n" "$HOME" >> "$RC_FILE"
 fi
 
 # automatically replace current shell with new one.
 exec "$SHELL"
 
-echo -e "${GREEN}Tree installation completed successfully.${RESET}"
+echo -e "\033[1;32mTree installation completed successfully.\033[0m"

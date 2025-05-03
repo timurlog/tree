@@ -157,6 +157,8 @@ _For more examples, please refer to the [Documentation](https://example.com)_
     - [ ] `-version` Outputs the version of the tree.
     - [ ] `-d` or `-dirs-only` List directories only.
     - [ ] `-t` Sort the output by last modification time instead of alphabetically.
+    - [ ] `-s` Print the size of each file along with the name.
+    - [ ] `-r` Sort the output in reverse alphabetic order. 
 
 See the [open issues](https://github.com/timurlog/tree/issues) for a full list of proposed features (and known issues).
 

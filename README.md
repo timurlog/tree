@@ -110,8 +110,7 @@ The project is designed to be simple and portable.
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+Here are the steps to follow to install `tree` on your local machine.
 
 ### Installation
 

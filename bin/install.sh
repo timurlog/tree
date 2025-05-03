@@ -17,7 +17,7 @@ rm -rf tree
 # download github
 git clone --recursive https://github.com/timurlog/tree.git > /dev/null 2>&1 || { echo "${RED}Cloning failed.${RESET}"; exit 1; }
 
-cp -r tree "$HOME" || { echo "Failed to copy tree directory"; exit 1; }
+cp -r tree "$HOME"
 
 cd "$HOME" || exit
 rm -rf temp_____
@@ -35,15 +35,14 @@ if [ "$(uname)" != "Darwin" ]; then
 	fi
 fi
 
-echo "Try to add alias tree in file: $RC_FILE"
+echo "${YELLOW}Adding alias tree in file: $RC_FILE${RESET}"
 
 # set up the alias
 if ! grep "tree=" "$RC_FILE" &> /dev/null; then
-	echo "tree alias not present"
 	printf "\nalias tree='%s/tree/tree'\n" "$HOME" >> "$RC_FILE"
 fi
 
 # automatically replace current shell with new one.
 exec "$SHELL"
 
-printf "\033[33m... and don't forget, \033[1;37mpaco\033[0;33m is not a replacement for your own tests! \033[0m\n"
+echo "${GREEN}tree Installation Completed Successfully.${RESET}"

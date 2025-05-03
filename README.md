@@ -114,16 +114,16 @@ Here are the steps to follow to install `tree` on your 42 Linux machine.
 
 ### Linux Only Installation
 
-1. Clone the repo
+1. Execute this Command
 
    ```sh
-   git clone https://github.com/timurlog/tree.git && cd tree
+   bash -c "$(curl -fsSL https://raw.github.com/timurlog/tree/main/bin/install.sh)"
    ```
-2. Run the `install.sh` script 
+<!-- 2. Run the `install.sh` script 
 
    ```sh
    bash bin/install.sh
-   ```
+   ``` -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

@@ -110,9 +110,9 @@ The project is designed to be simple and portable.
 <!-- GETTING STARTED -->
 ## Getting Started
 
-Here are the steps to follow to install `tree` on your 42 Linux/MacOS machine.
+Here are the steps to follow to install `tree` on your 42 Linux/macOS machine.
 
-### Linux/MaxOS Installation Only
+### Linux/macOS Installation Only
 
 Execute this Command
 
@@ -140,7 +140,7 @@ Execute this Command
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-### Basic Syntax of `tree` Command
+### The basic syntax is:
 
    ```sh
    tree [options]
@@ -148,16 +148,16 @@ Execute this Command
 
 ### Options Available in my `tree` Command
 
-| Options                    | Description                                                          |
-|----------------------------|----------------------------------------------------------------------|
-| `-help`                    | Show help                                                            |
-| `-version`                 | Outputs the version of the tree.                                     |
-| `-update`                  | Update tree                                                          |
-| `directory name`           | Display the tree hierarchy of a directory.                           |
-| `-d`                       | List directories only.                                               |
-| `-t`                       | Sort the output by last modification time instead of alphabetically. |
-| `-s`                       | Print the size of each file along with the name.                     |
-| `-r`                       | Sort the output in reverse alphabetic order.                         |
+| Options                    | Description                                                            |
+|----------------------------|------------------------------------------------------------------------|
+| `-help`                    | Show help.                                                             |
+| `-version`                 | Displays the version of the tree.                                      |
+| `-update`                  | Updates the tree command.                                              |
+| `directory name`           | Displays the directory tree hierarchy.                                 |
+| `-d`                       | Lists only directories.                                                |
+| `-t`                       | Sorts the output by last modification time rather than alphabetically. |
+| `-s`                       | Print the size of each file along with the name.                       |
+| `-r`                       | Sort the output in reverse alphabetic order.                           |
 
 
 _For more examples, please refer to the [Documentation](https://www.geeksforgeeks.org/tree-command-unixlinux/)_

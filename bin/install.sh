@@ -36,7 +36,7 @@ RC_FILE="$HOME/.zshrc"
 echo "Adding alias tree in file: $RC_FILE"
 
 # set up the alias
-if ! grep "tree=" "$RC_FILE" &> /dev/null; then
+if ! grep "tree=" "$RC_FILE" > /dev/null 2>&1; then
 	printf "\nalias tree='%s/tree/tree'\n" "$HOME" >> "$RC_FILE"
 fi
 

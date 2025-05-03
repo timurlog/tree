@@ -140,7 +140,7 @@ Basic Syntax of `tree` Command in Linux
 
 _For more examples, please refer to the [Documentation](https://www.geeksforgeeks.org/tree-command-unixlinux/)_
 
-_This project does not implement all the options available in the original tree command_
+_This project does not implement all the options available in the original `tree` command_
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

@@ -34,6 +34,7 @@ make > /dev/null 2>&1
 RC_FILE="$HOME/.zshrc"
 
 echo "Adding alias tree in file: $RC_FILE"
+echo "Tree installation completed successfully."
 
 # set up the alias
 if ! grep "tree=" "$RC_FILE" > /dev/null 2>&1; then
@@ -41,5 +42,4 @@ if ! grep "tree=" "$RC_FILE" > /dev/null 2>&1; then
 fi
 
 # automatically replace current shell with new one.
-echo "Tree installation completed successfully."
 exec "$SHELL"

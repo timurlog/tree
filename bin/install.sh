@@ -15,7 +15,7 @@ INSTALL_DIR="$HOME/tree"
 HOME_DIR="$HOME"
 RC_FILE="$HOME/.zshrc"
 
-echo -e "${BLUE}Bienvenue dans l'installateur de Tree.${RESET}"
+echo -e "${BLUE}Bienvenue dans l'installateur de tree.${RESET}"
 cd "$HOME" || { echo -e "${RED}Impossible de revenir au répertoire personnel.${RESET}"; exit 1; }
 
 # Nettoyage et création du répertoire temporaire
@@ -36,7 +36,7 @@ rm -rf "$INSTALL_DIR"
 cp -r "$TEMP_DIR/tree" "$HOME_DIR" || { echo -e "${RED}Échec de la copie des fichiers.${RESET}"; exit 1; }
 
 # Construction du projet
-echo -e "${YELLOW}Construction de Tree...${RESET}"
+echo -e "${YELLOW}Construction de tree...${RESET}"
 cd "$INSTALL_DIR" || { echo -e "${RED}Impossible d'accéder au répertoire d'installation.${RESET}"; exit 1; }
 make > /dev/null 2>&1 || { echo -e "${RED}Échec de la construction.${RESET}"; exit 1; }
 
@@ -50,7 +50,7 @@ cd "$HOME" || { echo -e "${RED}Impossible de revenir au répertoire personnel.${
 rm -rf "$TEMP_DIR" || { echo -e "${RED}Échec de la suppression du répertoire temporaire.${RESET}"; exit 1; }
 
 # Fin de l'installation
-echo -e "${GREEN}Installation de Tree terminée avec succès.${RESET}"
+echo -e "${GREEN}Installation de tree terminée avec succès.${RESET}"
 
 # Remplacement automatique du shell actuel
 exec "$SHELL"

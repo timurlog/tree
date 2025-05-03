@@ -19,8 +19,14 @@ cd "$HOME"/tree || exit
 
 make
 
-RC_FILE="$HOME/.bashrc"
-[[ -f "$HOME/.zshrc" ]] && RC_FILE="$HOME/.zshrc"
+RC_FILE="$HOME/.zshrc"
+
+if [ "$(uname)" != "Darwin" ]; then
+	RC_FILE="$HOME/.bashrc"
+	if [[ -f "$HOME/.zshrc" ]]; then
+		RC_FILE="$HOME/.zshrc"
+	fi
+fi
 
 echo "Try to add alias tree in file: $RC_FILE"
 

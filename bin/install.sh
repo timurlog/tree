@@ -41,7 +41,7 @@ cd "$INSTALL_DIR" || { echo -e "${RED}Impossible d'accéder au répertoire d'ins
 make > /dev/null 2>&1 || { echo -e "${RED}Échec de la construction.${RESET}"; exit 1; }
 
 # Ajout de l'alias dans le fichier de configuration
-echo -e "${YELLOW}Ajout de l'alias dans ${MAGENTA}$RC_FILE${RESET}..."
+echo -e "${YELLOW}Ajout de l'alias dans ${MAGENTA}$RC_FILE${YELLOW}...${RESET}"
 if ! grep -q "alias tree=" "$RC_FILE"; then
     printf "\nalias tree=%s/tree/tree\n" "$HOME_DIR" >> "$RC_FILE"
 fi

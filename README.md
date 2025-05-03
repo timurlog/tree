@@ -153,9 +153,9 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 
 - [x] Basic Syntax `tree [directorie]` Command in Linux
 - [ ] Basic Syntax of `tree [options]` Command in Linux
-    - [ ] `--help`
-    - [ ] `--version` Outputs the version of the tree.
-    - [ ] `-d` or `--dirs-only` List directories only.
+    - [ ] `-help`
+    - [ ] `-version` Outputs the version of the tree.
+    - [ ] `-d` or `-dirs-only` List directories only.
     - [ ] `-t` Sort the output by last modification time instead of alphabetically.
 
 See the [open issues](https://github.com/timurlog/tree/issues) for a full list of proposed features (and known issues).

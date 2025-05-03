@@ -80,7 +80,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]]
+[![Product Name Screen Shot][product-screenshot]]()
 
 This project is a C reimplementation of the Unix `tree` command, which recursively displays a directory structure.
 

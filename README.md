@@ -22,7 +22,7 @@
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
-[![project_license][license-shield]][license-url]
+[![MIT License][license-shield]][license-url]
 
 
 <!-- PROJECT LOGO -->
@@ -81,7 +81,7 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-Here's a blank template to get started. To avoid retyping too much info, do a search and replace with your text editor for the following: `timurlog`, `tree`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `Tree`, `project_description`, `project_license`
+Here's a blank template to get started. To avoid retyping too much info, do a search and replace with your text editor for the following: `timurlog`, `tree`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `Tree`, `project_description`, `MIT License`
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -189,7 +189,7 @@ Don't forget to give the project a star! Thanks again!
 <!-- LICENSE -->
 ## License
 
-Distributed under the project_license. See `LICENSE.txt` for more information.
+Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -225,7 +225,7 @@ Project Link: [https://github.com/timurlog/tree](https://github.com/timurlog/tre
 [stars-url]: https://github.com/timurlog/tree/stargazers
 [issues-shield]: https://img.shields.io/github/issues/timurlog/tree.svg?style=for-the-badge
 [issues-url]: https://github.com/timurlog/tree/issues
-[license-shield]: https://img.shields.io/github/license/timurlog/tree.svg?style=for-the-badge
+[license-shield]: https://img.shields.io/badge/License-MIT-green?style=for-the-badge
 [license-url]: https://github.com/timurlog/tree/blob/main/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/linkedin_username

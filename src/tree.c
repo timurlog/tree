@@ -6,15 +6,11 @@
 /*   By: tilogie <tilogie@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/02 16:00:19 by tilogie           #+#    #+#             */
-/*   Updated: 2025/05/03 15:09:29 by tilogie          ###   ########.fr       */
+/*   Updated: 2025/05/03 19:10:11 by tilogie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <dirent.h>
-#include <sys/stat.h>
+#include "tree.h"
 
 void	generate_tree(const char *dir, const char *prefix)
 {

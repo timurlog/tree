@@ -121,7 +121,7 @@ To get a local copy up and running follow these simple example steps.
 2. Run the `install.sh` script 
 
    ```sh
-   bash install.sh
+   bash bin/install.sh
    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

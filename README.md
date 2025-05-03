@@ -119,6 +119,14 @@ Execute this Command
    ```sh
    bash -c "$(curl -fsSL https://raw.github.com/timurlog/tree/main/bin/install.sh)"
    ```
+
+### Update
+
+Execute this Command
+
+   ```sh
+   bash -c "$(curl -fsSL https://raw.github.com/timurlog/tree/main/bin/update.sh)"
+   ```
 <!-- 2. Run the `install.sh` script 
 
    ```sh

@@ -6,7 +6,7 @@
 /*   By: tilogie <tilogie@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/02 16:00:19 by tilogie           #+#    #+#             */
-/*   Updated: 2025/05/03 19:10:11 by tilogie          ###   ########.fr       */
+/*   Updated: 2025/05/04 01:00:23 by tilogie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,22 +64,4 @@ void	generate_tree(const char *dir, const char *prefix)
 		free(namelist[i]);
 	}
 	free(namelist);
-}
-
-int	main(int argc, char **argv)
-{
-	const char	*dir;
-	struct stat	st;
-
-	dir = ".";
-	if (argc > 1)
-		dir = argv[1];
-	if (stat(dir, &st) == -1 || !S_ISDIR(st.st_mode))
-	{
-		fprintf(stderr, "Error: Directory '%s' does not exist.\n", dir);
-		return (1);
-	}
-	printf("\033[1;34m%s\033[0m\n", dir);
-	generate_tree(dir, "");
-	return (0);
 }

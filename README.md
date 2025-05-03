@@ -81,7 +81,7 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-Here's a blank template to get started. To avoid retyping too much info, do a search and replace with your text editor for the following: `timurlog`, `tree`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `Tree`, `project_description`, `MIT License`
+Loading...
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -104,30 +104,17 @@ Here's a blank template to get started. To avoid retyping too much info, do a se
 This is an example of how you may give instructions on setting up your project locally.
 To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
-
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
-
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Clone the repo
    ```sh
-   git clone https://github.com/timurlog/tree.git
+   git clone https://github.com/timurlog/tree.git && cd tree
    ```
-3. Install NPM packages
+2. Execute the install.sh
    ```sh
-   npm install
+   bash install.sh
    ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
-5. Change git remote url to avoid accidental pushes to base project
+3. Optional: Change git remote url to avoid accidental pushes to base project
    ```sh
    git remote set-url origin timurlog/tree
    git remote -v # confirm the changes

@@ -185,6 +185,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 ## Contact
 
 Timur Logie - [42 Profile](https://profile.intra.42.fr/users/tilogie) - tilogie@student.s19.be
+
 Project Link: [https://github.com/timurlog/tree](https://github.com/timurlog/tree)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

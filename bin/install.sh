@@ -41,6 +41,8 @@ printf "%bTry to adding alias tree in file: %s%b\n" "$YELLOW" "$RC_FILE" "$RESET
 if ! grep "tree=" "$RC_FILE" &> /dev/null; then
 	echo -e "\033[1;33mAdding it...\033[0m"
 	printf "\nalias tree='%s/tree/tree'\n" "$HOME" >> "$RC_FILE"
+else
+	echo -e "\033[1;32mAlias already exists in %s.\033[0m" "$RC_FILE"
 fi
 
 # automatically replace current shell with new one.

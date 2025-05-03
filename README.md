@@ -31,13 +31,13 @@
 <br />
 <div align="center">
   <a href="https://github.com/timurlog/tree">
-    <img src="assets/logo.sgv" alt="Logo" width="80" height="80">
+    <img src="assets/logo.svg" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">Tree</h3>
 
   <p align="center">
-    project_description
+    Reimplementation of the Unix 'tree' command in C
     <br />
     <a href="https://github.com/timurlog/tree"><strong>Explore the docs »</strong></a>
     <br />

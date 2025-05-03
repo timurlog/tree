@@ -1,5 +1,5 @@
 <!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
-<a name="readme-top"></a>
+<a id="readme-top"></a>
 <!--
 *** Thanks for checking out the Best-README-Template. If you have a suggestion
 *** that would make this better, please fork the repo and create a pull request
@@ -7,6 +7,7 @@
 *** Don't forget to give the project a star!
 *** Thanks again! Now go create something AMAZING! :D
 -->
+
 
 
 <!-- PROJECT SHIELDS -->
@@ -21,7 +22,8 @@
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
+[![project_license][license-shield]][license-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
 
 
 
@@ -29,22 +31,22 @@
 <br />
 <div align="center">
   <a href="https://github.com/timurlog/tree">
-    <img src="assets/logo.svg" alt="Logo" width="80" height="80">
+    <img src="assets/logo.sgv" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">Tree</h3>
 
   <p align="center">
-    $project_description
+    project_description
     <br />
     <a href="https://github.com/timurlog/tree"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <a href="https://github.com/timurlog/tree">View Demo</a>
-    ·
-    <a href="https://github.com/timurlog/tree/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/timurlog/tree/issues">Request Feature</a>
+    &middot;
+    <a href="https://github.com/timurlog/tree/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
+    &middot;
+    <a href="https://github.com/timurlog/tree/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
   </p>
 </div>
 
@@ -83,7 +85,7 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `timurlog`, `tree`, `@timur_log`, `Timur Logie`, `email_client`, `timur.logie@gmail.com`, `Tree`, `project_description`
+Here's a blank template to get started. To avoid retyping too much info, do a search and replace with your text editor for the following: `timurlog`, `tree`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `Tree`, `project_description`, `project_license`
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -133,6 +135,11 @@ This is an example of how to list things you need to use the software and how to
    ```js
    const API_KEY = 'ENTER YOUR API';
    ```
+5. Change git remote url to avoid accidental pushes to base project
+   ```sh
+   git remote set-url origin timurlog/tree
+   git remote -v # confirm the changes
+   ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -179,12 +186,18 @@ Don't forget to give the project a star! Thanks again!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+### Top contributors:
+
+<a href="https://github.com/timurlog/tree/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=timurlog/tree" alt="contrib.rocks image" />
+</a>
+
 
 
 <!-- LICENSE -->
 ## License
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
+Distributed under the project_license. See `LICENSE.txt` for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -192,8 +205,6 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 <!-- CONTACT -->
 ## Contact
-
-Timur Logie - [@timur_log](https://twitter.com/timur_log) - timur.logie@gmail.com
 
 Project Link: [https://github.com/timurlog/tree](https://github.com/timurlog/tree)
 
@@ -223,10 +234,10 @@ Project Link: [https://github.com/timurlog/tree](https://github.com/timurlog/tre
 [issues-shield]: https://img.shields.io/github/issues/timurlog/tree.svg?style=for-the-badge
 [issues-url]: https://github.com/timurlog/tree/issues
 [license-shield]: https://img.shields.io/github/license/timurlog/tree.svg?style=for-the-badge
-[license-url]: https://github.com/timurlog/tree/blob/main/LICENCE.txt
+[license-url]: https://github.com/timurlog/tree/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/timur-logie/
-[product-screenshot]: assets/screenshot.png
+[linkedin-url]: https://linkedin.com/in/linkedin_username
+[product-screenshot]: images/screenshot.png
 [Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [Next-url]: https://nextjs.org/
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
@@ -242,4 +253,4 @@ Project Link: [https://github.com/timurlog/tree](https://github.com/timurlog/tre
 [Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
 [Bootstrap-url]: https://getbootstrap.com
 [JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
-[JQuery-url]: https://jquery.com
+[JQuery-url]: https://jquery.com 

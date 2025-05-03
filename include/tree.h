@@ -6,7 +6,7 @@
 /*   By: tilogie <tilogie@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/03 19:08:09 by tilogie           #+#    #+#             */
-/*   Updated: 2025/05/03 19:08:53 by tilogie          ###   ########.fr       */
+/*   Updated: 2025/05/04 01:01:27 by tilogie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,5 +18,8 @@
 # include <string.h>
 # include <dirent.h>
 # include <sys/stat.h>
+
+// Function to generate a tree structure of the directory
+void	generate_tree(const char *dir, const char *prefix);
 
 #endif

@@ -171,11 +171,11 @@ _This project does not implement all the options available in the original `tree
 <!-- ROADMAP -->
 ## Roadmap
 
-- [x] Basic Syntax `tree [directorie]` Command
+- [x] Basic Syntax `tree [directory]` Command
 - [ ] Basic Syntax of `tree [options]` Command
-    - [ ] `-help`
-    - [ ] `-version`
-    - [ ] `-update`
+    - [x] `-help`
+    - [x] `-version`
+    - [x] `-update`
     - [ ] `-d`
     - [ ] `-t`
     - [ ] `-s`

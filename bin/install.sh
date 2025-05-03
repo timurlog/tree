@@ -42,7 +42,7 @@ make > /dev/null 2>&1 || { echo -e "${RED}Échec de la construction.${RESET}"; e
 # Ajout de l'alias dans le fichier de configuration
 echo -e "${YELLOW}Ajout de l'alias dans ${MAGENTA}$RC_FILE${RESET}..."
 if ! grep -q "alias tree=" "$RC_FILE"; then
-    printf "\nalias tree='%s/tree/tree'\n" "$INSTALL_DIR" >> "$RC_FILE" || { echo -e "${RED}Échec de la mise à jour de ${RC_FILE}.${RESET}"; exit 1; }
+    printf "\nalias tree='%s/tree'\n" "$INSTALL_DIR" >> "$RC_FILE" || { echo -e "${RED}Échec de la mise à jour de ${RC_FILE}.${RESET}"; exit 1; }
 fi
 
 cd "$HOME" || { echo -e "${RED}Impossible de revenir au répertoire personnel.${RESET}"; exit 1; }

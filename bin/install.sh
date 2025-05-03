@@ -40,6 +40,5 @@ if ! grep "tree=" "$RC_FILE" &> /dev/null; then
 fi
 
 # automatically replace current shell with new one.
-exec "$SHELL"
-
 echo "Tree installation completed successfully."
+exec "$SHELL"

@@ -7,6 +7,8 @@ BLUE="\033[0;94m"
 MAGENTA="\033[0;95m"
 RESET="\033[0m"
 
+printf "%bWelcome to the tree instaler%b\n" "$BLUE" "$RESET"
+
 cd "$HOME" || exit
 
 mkdir temp_____

@@ -200,13 +200,14 @@ Project Link: [https://github.com/timurlog/tree](https://github.com/timurlog/tre
 
 
 <!-- ACKNOWLEDGMENTS -->
-<!-- ## Acknowledgments
+## Acknowledgments
 
-* []()
-* []()
-* []()
+* [tree Command in Linux](https://www.geeksforgeeks.org/tree-command-unixlinux/)
+* [Choose a License](https://choosealicense.com/)
+* [README.md Template](https://github.com/othneildrew/Best-README-Template)
+* [install.sh](https://github.com/xicodomingues/francinette/blob/master/bin/install.sh)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p> -->
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 

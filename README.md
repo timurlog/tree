@@ -132,9 +132,14 @@ Here are the steps to follow to install `tree` on your local machine.
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+Basic Syntax of `tree` Command in Linux
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+   ```sh
+   tree [options]
+   ```
+
+_For more examples, please refer to the [Documentation](https://www.geeksforgeeks.org/tree-command-unixlinux/)_
+_This project does not implement all the options available in the original tree command_
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

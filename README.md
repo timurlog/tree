@@ -144,6 +144,7 @@ Execute this Command
 |----------------------------|----------------------------------------------------------------------|
 | `-help`                    | Show help                                                            |
 | `-version`                 | Outputs the version of the tree.                                     |
+| `-version`                 | Update tree                                                          |
 | `directory name`           | Display the tree hierarchy of a directory.                           |
 | `-d`                       | List directories only.                                               |
 | `-t`                       | Sort the output by last modification time instead of alphabetically. |
@@ -165,11 +166,12 @@ _This project does not implement all the options available in the original `tree
 - [x] Basic Syntax `tree [directorie]` Command in Linux
 - [ ] Basic Syntax of `tree [options]` Command in Linux
     - [ ] `-help`
-    - [ ] `-version` Outputs the version of the tree.
-    - [ ] `-d` List directories only.
-    - [ ] `-t` Sort the output by last modification time instead of alphabetically.
-    - [ ] `-s` Print the size of each file along with the name.
-    - [ ] `-r` Sort the output in reverse alphabetic order. 
+    - [ ] `-version`
+    - [ ] `-update`
+    - [ ] `-d`
+    - [ ] `-t`
+    - [ ] `-s`
+    - [ ] `-r`
 
 See the [open issues](https://github.com/timurlog/tree/issues) for a full list of proposed features (and known issues).
 

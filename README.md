@@ -110,9 +110,9 @@ The project is designed to be simple and portable.
 <!-- GETTING STARTED -->
 ## Getting Started
 
-Here are the steps to follow to install `tree` on your local machine.
+Here are the steps to follow to install `tree` on your 42 Linux machine.
 
-### Installation
+### Linux Only Installation
 
 1. Clone the repo
 

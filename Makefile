@@ -6,7 +6,7 @@
 #    By: tilogie <tilogie@student.s19.be>           +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/05/03 14:44:56 by tilogie           #+#    #+#              #
-#    Updated: 2025/05/04 01:00:33 by tilogie          ###   ########.fr        #
+#    Updated: 2025/05/04 01:27:50 by tilogie          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -34,7 +34,7 @@ WHITE = \033[0;97m
 
 #Sources
 
-SRC_FILES	=	main tree
+SRC_FILES	=	main tree format
 
 
 SRC 		= 	$(addprefix $(SRC_DIR), $(addsuffix .c, $(SRC_FILES)))

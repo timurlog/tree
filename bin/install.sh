@@ -1,5 +1,12 @@
 #!/bin/bash
 
+YELLOW="\033[1;33m"
+RED="\033[0;91m"
+GREEN="\033[1;32m"
+BLUE="\033[0;94m"
+MAGENTA="\033[0;95m"
+RESET="\033[0m"
+
 cd "$HOME" || exit
 
 mkdir temp_____
@@ -8,7 +15,7 @@ cd temp_____ || exit
 rm -rf tree
 
 # download github
-git clone --recursive https://github.com/timurlog/tree.git || { echo "Git clone failed"; exit 1; }
+git clone --recursive https://github.com/timurlog/tree.git > /dev/null 2>&1 || { echo "${RED}Cloning failed.${RESET}"; exit 1; }
 
 cp -r tree "$HOME" || { echo "Failed to copy tree directory"; exit 1; }
 

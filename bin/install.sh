@@ -44,10 +44,10 @@ if ! grep "tree=" "$RC_FILE" &> /dev/null; then
 	echo -e "\033[1;33mAdding it...\033[0m"
 	printf "\nalias tree='%s/tree/tree'\n" "$HOME" >> "$RC_FILE"
 else
-	echo -e "\033[1;32mAlias already exists in %s.\033[0m" "$RC_FILE"
+	echo -e "\033[1;32mAlias already exists in $RC_FILE.\033[0m"
 fi
 
+printf "\033[1;32mTree installation completed successfully.\033[0m\n"
 # automatically replace current shell with new one.
 exec "$SHELL"
 
-printf "\033[1;32mTree installation completed successfully.\033[0m\n"

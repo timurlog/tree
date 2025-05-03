@@ -15,6 +15,7 @@ INSTALL_DIR="$HOME/tree"
 RC_FILE="$HOME/.zshrc"
 
 echo -e "${BLUE}Bienvenue dans l'installateur de Tree.${RESET}"
+cd "$HOME" || { echo -e "${RED}Impossible de revenir au répertoire personnel.${RESET}"; exit 1; }
 
 # Nettoyage et création du répertoire temporaire
 echo -e "${YELLOW}Préparation de l'installation...${RESET}"
@@ -43,6 +44,9 @@ echo -e "${YELLOW}Ajout de l'alias dans ${MAGENTA}$RC_FILE${RESET}..."
 if ! grep -q "alias tree=" "$RC_FILE"; then
     printf "\nalias tree='%s/tree/tree'\n" "$INSTALL_DIR" >> "$RC_FILE" || { echo -e "${RED}Échec de la mise à jour de ${RC_FILE}.${RESET}"; exit 1; }
 fi
+
+cd "$HOME" || { echo -e "${RED}Impossible de revenir au répertoire personnel.${RESET}"; exit 1; }
+rm -rf "$TEMP_DIR" || { echo -e "${RED}Échec de la suppression du répertoire temporaire.${RESET}"; exit 1; }
 
 # Fin de l'installation
 echo -e "${GREEN}Installation de Tree terminée avec succès.${RESET}"

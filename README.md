@@ -224,10 +224,10 @@ Project Link: [https://github.com/timurlog/tree](https://github.com/timurlog/tre
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-* [tree Command Doc.](https://www.geeksforgeeks.org/tree-command-unixlinux/)
+* [tree Command Doc](https://www.geeksforgeeks.org/tree-command-unixlinux/)
 * [Choose a License](https://choosealicense.com/)
-* [`README.md` Template](https://github.com/othneildrew/Best-README-Template)
-* [Francinette `install.sh` Inspiration](https://github.com/xicodomingues/francinette/blob/master/bin/install.sh)
+* [README.md Template](https://github.com/othneildrew/Best-README-Template)
+* [Francinette install.sh Inspiration](https://github.com/xicodomingues/francinette/blob/master/bin/install.sh)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

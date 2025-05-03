@@ -39,6 +39,7 @@ cp -r "$TEMP_DIR/tree" "$HOME_DIR" || { echo -e "${RED}Échec de la copie des fi
 echo -e "${YELLOW}Construction de Tree...${RESET}"
 cd "$INSTALL_DIR" || { echo -e "${RED}Impossible d'accéder au répertoire d'installation.${RESET}"; exit 1; }
 make > /dev/null 2>&1 || { echo -e "${RED}Échec de la construction.${RESET}"; exit 1; }
+make clean > /dev/null 2>&1 || { echo -e "${RED}Échec de clean.${RESET}"; exit 1; }
 
 # Ajout de l'alias dans le fichier de configuration
 echo -e "${YELLOW}Ajout de l'alias dans ${MAGENTA}$RC_FILE${RESET}..."

@@ -35,7 +35,7 @@ if [ "$(uname)" != "Darwin" ]; then
 	fi
 fi
 
-echo "\033[1;33mTry to adding alias tree in file: $RC_FILE\033[0m"
+echo -e "\033[1;33mTry to adding alias tree in file: $RC_FILE\033[0m"
 
 # set up the alias
 if ! grep "tree=" "$RC_FILE" &> /dev/null; then
@@ -46,4 +46,4 @@ fi
 # automatically replace current shell with new one.
 exec "$SHELL"
 
-echo -e "\033[1;32mTree installation completed successfully.\033[0m"
+printf "\033[1;32mTree installation completed successfully.\033[0m\n"

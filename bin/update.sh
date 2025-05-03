@@ -24,18 +24,27 @@ cd "$INSTALL_DIR" || { echo -e "${RED}Unable to access the installation director
 # Pull the latest changes from the repository
 if [ -d ".git" ]; then
 	echo -e "${YELLOW}Pulling latest changes from the repository...${RESET}"
-	git pull origin main > /dev/null 2>&1 || { echo -e "${RED}Failed to pull the repository.${RESET}"; exit 1; }
+	OUTPUT=$(git pull origin main 2>&1)
+	if echo "$OUTPUT" | grep -q "Already up to date."; then
+		echo -e "${GREEN}Everything is already up to date.${RESET}"
+		exit 0
+	elif echo "$OUTPUT" | grep -q "Updating"; then
+		echo -e "${YELLOW}Repository updated successfully.${RESET}"
+	else
+		echo -e "${RED}Failed to pull the repository.${RESET}"
+		exit 1
+	fi
 else
 	echo -e "${RED}Error: This is not a git repository.${RESET}"
 	exit 1
 fi
 
 # Build the project using `make`
-echo -e "${YELLOW}ReBuilding tree...${RESET}"
+echo -e "${YELLOW}Rebuilding tree...${RESET}"
 make > /dev/null 2>&1 || { echo -e "${RED}Build failed.${RESET}"; exit 1; }
 
 # Return to the home directory and clean up the temporary directory
 cd "$HOME" || { echo -e "${RED}Unable to return to the home directory.${RESET}"; exit 1; }
 
 # Display a success message
-echo -e "${GREEN}tree update completed successfully.${RESET}"
+echo -e "${GREEN}Tree update completed successfully.${RESET}"

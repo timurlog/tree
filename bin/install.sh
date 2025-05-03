@@ -54,7 +54,7 @@ cd "$HOME" || { echo -e "${RED}Unable to return to the home directory.${RESET}";
 rm -rf "$TEMP_DIR" || { echo -e "${RED}Failed to delete the temporary directory.${RESET}"; exit 1; }
 
 # Display a success message
-echo -e "${GREEN}tree installation completed successfully.${RESET}"
+echo -e "${GREEN}Tree installation completed successfully.${RESET}"
 
 # Restart the shell to apply changes
 exec "$SHELL"

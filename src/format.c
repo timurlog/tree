@@ -6,7 +6,7 @@
 /*   By: tilogie <tilogie@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/04 01:25:59 by tilogie           #+#    #+#             */
-/*   Updated: 2025/05/04 01:28:20 by tilogie          ###   ########.fr       */
+/*   Updated: 2025/05/04 01:42:40 by tilogie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,30 +14,31 @@
 
 void	tree_format(const char *str)
 {
-	int	i;
-
-	i = 1;
-	if (str == "-version")
+	if (!strcmp(str, "-version"))
 	{
 		printf("Tree version 0.1.0\n");
-		exit(0);
+		exit(1);
 	}
-	while (str[i])
+	else if (!strcmp(str, "-help") || !strcmp(str, "-h"))
 	{
-		// if (str[i] == 'a')
-		// 	g_format.a = 1;
-		// else if (str[i] == 'l')
-		// 	g_format.l = 1;
-		// else if (str[i] == 'r')
-		// 	g_format.r = 1;
-		// else if (str[i] == 't')
-		// 	g_format.t = 1;
-		// else if (str[i] == 'R')
-		// 	g_format.R = 1;
-		// else if (str[i] == 'd')
-		// 	g_format.d = 1;
-		// else if (str[i] == 'h')
-		// 	g_format.h = 1;
-		// i++;
+		printf("Usage: tree [options] [directory]\n");
+		printf("Options:\n");
+		printf("  -r : Reverse order\n");
+		printf("  -t : Sort by modification time\n");
+		printf("  -d : Show directories only\n");
+		printf("  -s : Show size\n");
+		printf("  -h : Show help\n");
+		exit(1);
+	}
+	else if (!strcmp(str, "-update"))
+	{
+		system("bash bin/update.sh");
+		exit(1);
+	}
+	else
+	{
+		fprintf(stderr, "Error: Invalid option '%s'.\n", str);
+		fprintf(stderr, "Use '-help' for usage information.\n");
+		exit(1);
 	}
 }

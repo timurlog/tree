@@ -11,6 +11,7 @@ echo "Welcome in tree instaler"
 
 cd "$HOME" || exit
 
+rm -rf tree
 mkdir temp_____
 
 cd temp_____ || exit

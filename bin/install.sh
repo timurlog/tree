@@ -24,7 +24,7 @@ rm -rf temp_____
 
 cd "$HOME"/tree || exit
 
-make
+make > /dev/null 2>&1
 
 RC_FILE="$HOME/.zshrc"
 
@@ -35,14 +35,15 @@ if [ "$(uname)" != "Darwin" ]; then
 	fi
 fi
 
-printf "${YELLOW}Adding alias tree in file: $RC_FILE${RESET}"
+echo "${YELLOW}Adding alias tree in file: $RC_FILE${RESET}"
 
 # set up the alias
 if ! grep "tree=" "$RC_FILE" &> /dev/null; then
+	echo -e "${YELLOW}Adding it...${RESET}"
 	printf "\nalias tree='%s/tree/tree'\n" "$HOME" >> "$RC_FILE"
 fi
 
 # automatically replace current shell with new one.
 exec "$SHELL"
 
-printf "${GREEN}tree Installation Completed Successfully.${RESET}"
+echo -e "${GREEN}Tree installation completed successfully.${RESET}"

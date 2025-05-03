@@ -216,7 +216,7 @@ Project Link: [https://github.com/timurlog/tree](https://github.com/timurlog/tre
 [issues-url]: https://github.com/timurlog/tree/issues
 [license-shield]: https://img.shields.io/badge/License-MIT-green?style=for-the-badge
 [license-url]: https://github.com/timurlog/tree/blob/main/LICENSE.txt
-[42]: https://img.shields.io/badge/42%20Profile-000000?style=for-the-badge&logo=42&ColorB=555
+[42]: https://img.shields.io/badge/-Profile-black.svg?style=for-the-badge&logo=42&colorB=555
 [42t]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [42-url]: https://profile.intra.42.fr/users/tilogie
 [product-screenshot]: assets/screenshot.png

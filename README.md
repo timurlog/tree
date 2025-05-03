@@ -151,10 +151,12 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-    - [ ] Nested Feature
+- [x] Basic Syntax "tree" Command in Linux
+- [ ] Basic Syntax of "tree [options]" Command in Linux
+    - [ ] –help
+    - [ ] –version
+    - [ ] `-d` or `–dirs-only
+    - [ ] -t
 
 See the [open issues](https://github.com/timurlog/tree/issues) for a full list of proposed features (and known issues).
 

@@ -138,7 +138,7 @@ Here are the steps to follow to install `tree` on your local machine.
    tree [options]
    ```
 
-### Options Available in `tree` Command in Linux
+### Options Available in my `tree` Command in Linux
 
 | Options                    | Description                                                          |
 |----------------------------|----------------------------------------------------------------------|

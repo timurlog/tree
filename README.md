@@ -144,7 +144,7 @@ Execute this Command
 |----------------------------|----------------------------------------------------------------------|
 | `-help`                    | Show help                                                            |
 | `-version`                 | Outputs the version of the tree.                                     |
-| `-version`                 | Update tree                                                          |
+| `-update`                 | Update tree                                                          |
 | `directory name`           | Display the tree hierarchy of a directory.                           |
 | `-d`                       | List directories only.                                               |
 | `-t`                       | Sort the output by last modification time instead of alphabetically. |

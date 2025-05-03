@@ -114,10 +114,12 @@ To get a local copy up and running follow these simple example steps.
 ### Installation
 
 1. Clone the repo
+
    ```sh
    git clone https://github.com/timurlog/tree.git && cd tree
    ```
 2. Run the `install.sh` script 
+
    ```sh
    bash install.sh
    ```

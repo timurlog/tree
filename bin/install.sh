@@ -44,6 +44,6 @@ if ! grep "tree=" "$RC_FILE" &> /dev/null; then
 fi
 
 # automatically replace current shell with new one.
-source "$RC_FILE"
+exec "$SHELL"
 
 printf "\033[33m... and don't forget, \033[1;37mpaco\033[0;33m is not a replacement for your own tests! \033[0m\n"

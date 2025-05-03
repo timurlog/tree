@@ -35,7 +35,7 @@ if [ "$(uname)" != "Darwin" ]; then
 	fi
 fi
 
-echo -e "\033[1;33mTry to adding alias tree in file: $RC_FILE\033[0m"
+printf "%bTry to adding alias tree in file: %s%b\n" "$YELLOW" "$RC_FILE" "$RESET"
 
 # set up the alias
 if ! grep "tree=" "$RC_FILE" &> /dev/null; then

@@ -6,7 +6,7 @@
 /*   By: tilogie <tilogie@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/04 01:25:59 by tilogie           #+#    #+#             */
-/*   Updated: 2025/05/04 01:42:40 by tilogie          ###   ########.fr       */
+/*   Updated: 2025/05/04 01:46:38 by tilogie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	tree_format(const char *str)
 {
 	if (!strcmp(str, "-version"))
 	{
-		printf("Tree version 0.1.0\n");
+		printf("Tree version 0.1.1\n");
 		exit(1);
 	}
 	else if (!strcmp(str, "-help") || !strcmp(str, "-h"))

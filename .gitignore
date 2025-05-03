@@ -1,0 +1,36 @@
+# Ignorer les fichiers objets et binaires
+*.o
+*.a
+*.so
+*.exe
+*.out
+*.elf
+tree
+
+# Ignorer les fichiers de compilation et de débogage
+*.d
+*.gcda
+*.gcno
+*.gcov
+
+# Ignorer les fichiers générés par Make
+Makefile.in
+config.h
+config.log
+config.status
+
+# Ignorer les fichiers temporaires et de sauvegarde
+*.swp
+*.swo
+*~
+
+# Ignorer les dossiers spécifiques à certains outils
+.idea/
+.vscode/
+
+# Ignorer les résultats des tests
+/test_output/
+/test_results/
+
+# Ignorer les logs
+*.log

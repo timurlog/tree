@@ -82,7 +82,10 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-Loading...
+This project is a C reimplementation of the Unix `tree` command, which recursively displays a directory structure.
+It aims to provide a better understanding of file handling and directories.
+The program scans a given path (or `.` by default) and outputs a formatted tree view.
+The project is designed to be simple and portable.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -217,7 +220,6 @@ Project Link: [https://github.com/timurlog/tree](https://github.com/timurlog/tre
 [license-shield]: https://img.shields.io/badge/License-MIT-green?style=for-the-badge
 [license-url]: https://github.com/timurlog/tree/blob/main/LICENSE.txt
 [42]: https://img.shields.io/badge/-Profile-black.svg?style=for-the-badge&logo=42&colorB=555
-[42t]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [42-url]: https://profile.intra.42.fr/users/tilogie
 [product-screenshot]: assets/screenshot.png
 [C]: https://img.shields.io/badge/C-blue?style=for-the-badge&logo=c&logoColor=white

@@ -7,7 +7,7 @@ BLUE="\033[0;94m"
 MAGENTA="\033[0;95m"
 RESET="\033[0m"
 
-echo "{$BLUE}Welcome to the tree instaler{$RESET}"
+echo -e "\033[0;94mtree instaler\033[0m"
 
 cd "$HOME" || exit
 

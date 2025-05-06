@@ -150,9 +150,9 @@ Execute this Command
 
 | Options                    | Description                                                            |
 |----------------------------|------------------------------------------------------------------------|
-| `-help`                    | Show help.                                                             |
-| `-version`                 | Displays the version of the tree.                                      |
-| `-update`                  | Updates the tree command.                                              |
+| `--help`                   | Show help.                                                             |
+| `--version`                | Displays the version of the tree.                                      |
+| `--update`                 | Updates the tree command.                                              |
 | `directory name`           | Displays the directory tree hierarchy.                                 |
 | `-d`                       | Lists only directories.                                                |
 | `-t`                       | Sorts the output by last modification time rather than alphabetically. |
@@ -173,9 +173,9 @@ _This project does not implement all the options available in the original `tree
 
 - [x] Basic Syntax `tree [directory]` Command
 - [ ] Basic Syntax of `tree [options]` Command
-    - [x] `-help`
-    - [x] `-version`
-    - [x] `-update`
+    - [x] `--help`
+    - [x] `--version`
+    - [x] `--update`
     - [ ] `-d`
     - [ ] `-t`
     - [ ] `-s`

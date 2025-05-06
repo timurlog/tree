@@ -6,7 +6,7 @@
 /*   By: tilogie <tilogie@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/04 01:25:59 by tilogie           #+#    #+#             */
-/*   Updated: 2025/05/06 11:24:45 by tilogie          ###   ########.fr       */
+/*   Updated: 2025/05/06 12:21:16 by tilogie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,12 +17,12 @@ void	tree_format(const char *str)
 	char *user;
 
 	user = getenv("USER");
-	if (!strcmp(str, "-version"))
+	if (!strcmp(str, "--version"))
 	{
 		printf("tree version 0.1.2\n");
 		exit(1);
 	}
-	else if (!strcmp(str, "-help") || !strcmp(str, "-h"))
+	else if (!strcmp(str, "--help") || !strcmp(str, "-h"))
 	{
 		printf("Usage: tree [options] [directory]\n");
 		printf("Options:\n");
@@ -33,7 +33,7 @@ void	tree_format(const char *str)
 		printf("  -h : Show help\n");
 		exit(1);
 	}
-	else if (!strcmp(str, "-update"))
+	else if (!strcmp(str, "--update"))
 	{
 		if (user)
 		{
@@ -55,7 +55,7 @@ void	tree_format(const char *str)
 	else
 	{
 		fprintf(stderr, "Error: Invalid option '%s'.\n", str);
-		fprintf(stderr, "Use '-help' for usage information.\n");
+		fprintf(stderr, "Use '--help' for usage information.\n");
 		exit(1);
 	}
 }

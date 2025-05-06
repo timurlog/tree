@@ -6,7 +6,7 @@
 /*   By: tilogie <tilogie@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/04 01:25:59 by tilogie           #+#    #+#             */
-/*   Updated: 2025/05/06 13:53:25 by tilogie          ###   ########.fr       */
+/*   Updated: 2025/05/06 14:12:35 by tilogie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,13 +20,14 @@ void	print_version(void)
 
 void	print_help(void)
 {
-	printf("Usage: tree [options]... [directory]\n");
+	printf("Usage: tree [options] [directory]\n");
 	printf("Options:\n");
-	printf("  -r : Reverse order\n");
-	printf("  -t : Sort by modification time\n");
-	printf("  -d : Show directories only\n");
-	printf("  -s : Show size\n");
-	printf("  -h : Show help\n");
+	printf("  --version	--  Show version information\n");
+	printf("  --update	--  Update the program\n");
+	printf("  -r		--  Sort in reversed order\n");
+	printf("  -t		--  Sort output by modification time\n");
+	printf("  -d		--  List directories only\n");
+	printf("  -s		--  Print size of each file in bytes\n");
 	exit(1);
 }
 

@@ -24,16 +24,10 @@ cd "$INSTALL_DIR" || { echo -e "${RED}Unable to access the installation director
 # Pull the latest changes from the repository
 if [ -d ".git" ]; then
 	echo -e "${YELLOW}Pulling latest changes from the repository...${RESET}"
-	OUTPUT=$(git pull origin main 2>&1)
-	if echo "$OUTPUT" | grep -q "Already up to date."; then
-		echo -e "${GREEN}Everything is already up to date.${RESET}"
-		exit 0
-	elif echo "$OUTPUT" | grep -q "Updating"; then
-		echo -e "${YELLOW}Repository updated successfully.${RESET}"
-	else
-		echo -e "${RED}Failed to pull the repository.${RESET}"
-		exit 1
-	fi
+	git fetch origin > /dev/null 2>&1 || { echo -e "${RED}Failed to fetch from the repository.${RESET}"; exit 1; }
+	git reset --hard origin > /dev/null 2>&1 || { echo -e "${RED}Failed to reset the repository.${RESET}"; exit 1; }
+	git submodule update --init > /dev/null 2>&1 || { echo -e "${RED}Failed to update submodules.${RESET}"; exit 1; }
+	echo -e "${YELLOW}Repository updated successfully.${RESET}"
 else
 	echo -e "${RED}Error: This is not a git repository.${RESET}"
 	exit 1

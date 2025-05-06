@@ -6,19 +6,19 @@
 /*   By: tilogie <tilogie@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/04 01:25:59 by tilogie           #+#    #+#             */
-/*   Updated: 2025/05/06 14:12:35 by tilogie          ###   ########.fr       */
+/*   Updated: 2025/05/06 18:48:50 by tilogie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "tree.h"
 
-void	print_version(void)
+static int	print_version(void)
 {
 	printf("tree version 0.1.2\n");
-	exit(1);
+	return (1);
 }
 
-void	print_help(void)
+static int	print_help(void)
 {
 	printf("Usage: tree [options] [directory]\n");
 	printf("Options:\n");
@@ -28,10 +28,10 @@ void	print_help(void)
 	printf("  -t		--  Sort output by modification time\n");
 	printf("  -d		--  List directories only\n");
 	printf("  -s		--  Print size of each file in bytes\n");
-	exit(1);
+	return (1);
 }
 
-void	print_update(void)
+static int	print_update(void)
 {
 	char	*user;
 	char	command[256];
@@ -44,29 +44,43 @@ void	print_update(void)
 		{
 			fprintf(stderr, "Error: Failed to execute update script.\n");
 			printf("Use this: bash -c \"$(curl -fsSL https://raw.github.com/timurlog/tree/main/bin/update.sh)\"\n");
-			exit(1);
+			return (1);
 		}
 	}
 	else
 		fprintf(stderr, "Error: Unable to determine the user.\n");
-	exit(1);
+	return (1);
 }
 
-void	print_error(const char *str)
+static int	print_error(const char *str)
 {
 	fprintf(stderr, "Error: Invalid option '%s'.\n", str);
 	fprintf(stderr, "Use '--help' for usage information.\n");
-	exit(1);
+	return (1);
 }
 
-void	tree_format(const char *str)
+int	tree_format(const char *str, t_tree *g_tree)
 {
+	int	i;
+
+	i = 0;
 	if (!strcmp(str, "--version"))
-		print_version();
+		i = print_version();
 	else if (!strcmp(str, "--help") || !strcmp(str, "-h"))
-		print_help();
+		i = print_help();
 	else if (!strcmp(str, "--update"))
-		print_update();
+		i = print_update();
+	else if (!strcmp(str, "-r"))
+		g_tree->reverse = 1;
+	else if (!strcmp(str, "-t"))
+		g_tree->sort = 1;
+	else if (!strcmp(str, "-d"))
+		g_tree->dir_only = 1;
+	else if (!strcmp(str, "-s"))
+		g_tree->size = 1;
+	else if (str[0] == '-')
+		i = print_error(str);
 	else
-		print_error(str);
+		i = print_error(str);
+	return (i);
 }

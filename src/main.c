@@ -6,26 +6,50 @@
 /*   By: tilogie <tilogie@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/04 00:59:49 by tilogie           #+#    #+#             */
-/*   Updated: 2025/05/04 01:30:27 by tilogie          ###   ########.fr       */
+/*   Updated: 2025/05/06 19:05:12 by tilogie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "tree.h"
 
+static void	g_tree_init(t_tree *g_tree)
+{
+	g_tree->reverse = 0;
+	g_tree->sort = 0;
+	g_tree->dir_only = 0;
+	g_tree->size = 0;
+	g_tree->dir_nbr = 0;
+	g_tree->file_nbr = 0;
+}
+
 int	main(int argc, char **argv)
 {
+	t_tree		*g_tree;
 	const char	*dir;
 	struct stat	st;
 	int			i;
 
 	dir = ".";
 	i = 1;
+	g_tree = malloc(sizeof(t_tree));
+	if (!g_tree)
+	{
+		fprintf(stderr, "Error: Memory allocation failed.\n");
+		return (1);
+	}
+	g_tree_init(g_tree);
 	if (argc > 1)
 	{
 		while (argv[i])
 		{
 			if (argv[i][0] == '-')
-				tree_format(argv[i]);
+			{
+				if (tree_format(argv[i], g_tree) == 1)
+				{
+					free(g_tree);
+					return (1);
+				}
+			}
 			else
 				dir = argv[i];
 			i++;
@@ -37,6 +61,8 @@ int	main(int argc, char **argv)
 		return (1);
 	}
 	printf("\033[1;34m%s\033[0m\n", dir);
-	generate_tree(dir, "");
+	generate_tree(dir, "", g_tree);
+	printf("\n%d directories, %d files\n", g_tree->dir_nbr, g_tree->file_nbr);
+	free(g_tree);
 	return (0);
 }

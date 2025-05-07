@@ -5,6 +5,7 @@
 ### Added or Changed
 - Code optimization
 - Added `-d` (Lists only directories)
+- Now we see the `.git` folder but not its contents
 
 ## v0.1.2
 

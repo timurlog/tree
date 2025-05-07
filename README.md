@@ -143,7 +143,7 @@ Execute this Command
 ### The basic syntax is:
 
    ```sh
-   tree [options]
+   tree [options] [directory]
    ```
 
 ### Options Available in my `tree` Command
@@ -173,13 +173,13 @@ _This project does not implement all the options available in the original `tree
 
 - [x] Basic Syntax `tree [directory]` Command
 - [ ] Basic Syntax of `tree [options]` Command
-    - [x] `--help`
-    - [x] `--version`
-    - [x] `--update`
-    - [x] `-d`
-    - [ ] `-t`
-    - [ ] `-s`
-    - [ ] `-r`
+    - [x] `--help` Show help
+    - [x] `--version` Displays the version of the tree
+    - [x] `--update` Updates the tree command
+    - [x] `-d` Lists only directories
+    - [ ] `-t` Sorts the output by last modification time rather than alphabetically
+    - [ ] `-s` Print the size of each file along with the name
+    - [ ] `-r` Sort the output in reverse alphabetic order
 
 See the [open issues](https://github.com/timurlog/tree/issues) for a full list of proposed features (and known issues).
 

@@ -6,7 +6,7 @@
 /*   By: tilogie <tilogie@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/02 16:00:19 by tilogie           #+#    #+#             */
-/*   Updated: 2025/05/07 02:53:20 by tilogie          ###   ########.fr       */
+/*   Updated: 2025/05/07 03:10:01 by tilogie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 static int	is_valid_entry(const char *name, int only_dirs, struct dirent *entry)
 {
-	if (strcmp(name, ".") == 0 || strcmp(name, "..") == 0 || strcmp(name, ".git") == 0)
+	if (strcmp(name, ".") == 0 || strcmp(name, "..") == 0)
 		return (0);
 	if (only_dirs && entry->d_type != DT_DIR)
 		return (0);
@@ -41,8 +41,11 @@ static void	process_entry(const char *dir, const char *prefix, t_tree *g_tree, s
 	{
 		printf("%s%s── \033[1;34m%s\033[0m\n", prefix, is_last ? "└" : "├", entry->d_name);
 		g_tree->dir_nbr += 1;
-		snprintf(new_prefix, sizeof(new_prefix), "%s%s   ", prefix, is_last ? " " : "│");
-		generate_tree(path, new_prefix, g_tree);
+		if (strcmp(entry->d_name, ".git") != 0)
+		{
+			snprintf(new_prefix, sizeof(new_prefix), "%s%s   ", prefix, is_last ? " " : "│");
+			generate_tree(path, new_prefix, g_tree);
+		}
 	}
 	else if (!g_tree->dir_only && entry->d_type == DT_REG)
 	{

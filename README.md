@@ -96,11 +96,9 @@ The project is designed to be simple and portable.
 
 ### Built With
 
-   [![C][C]][C-url]
-
-   [![Makefile][Makefile]][Makefile-url]
-
-   [![Shell][Shell]][Shell-url]
+- [![C][C]][C-url]
+- [![Makefile][Makefile]][Makefile-url]
+- [![Shell][Shell]][Shell-url]
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

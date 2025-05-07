@@ -6,7 +6,7 @@
 /*   By: tilogie <tilogie@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/04 01:25:59 by tilogie           #+#    #+#             */
-/*   Updated: 2025/05/06 18:48:50 by tilogie          ###   ########.fr       */
+/*   Updated: 2025/05/07 02:09:23 by tilogie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 static int	print_version(void)
 {
-	printf("tree version 0.1.2\n");
+	printf("tree version 0.1.3\n");
 	return (1);
 }
 
@@ -78,8 +78,6 @@ int	tree_format(const char *str, t_tree *g_tree)
 		g_tree->dir_only = 1;
 	else if (!strcmp(str, "-s"))
 		g_tree->size = 1;
-	else if (str[0] == '-')
-		i = print_error(str);
 	else
 		i = print_error(str);
 	return (i);

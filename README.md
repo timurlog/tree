@@ -62,7 +62,7 @@
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
-        <li><a href="#linux/macos-installation">Installation</a></li>
+        <li><a href="#linuxmacos-installation">Installation</a></li>
         <li><a href="#update">Update</a></li>
       </ul>
     </li>

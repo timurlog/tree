@@ -6,19 +6,20 @@
 /*   By: tilogie <tilogie@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/04 01:25:59 by tilogie           #+#    #+#             */
-/*   Updated: 2025/05/07 02:09:23 by tilogie          ###   ########.fr       */
+/*   Updated: 2025/05/07 15:11:57 by tilogie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "tree.h"
 
-static int	print_version(void)
+static int	print_version(t_tree *g_tree)
 {
 	printf("tree version 0.1.3\n");
-	return (1);
+	free(g_tree);
+	exit (0);
 }
 
-static int	print_help(void)
+static int	print_help(t_tree *g_tree)
 {
 	printf("Usage: tree [options] [directory]\n");
 	printf("Options:\n");
@@ -28,7 +29,8 @@ static int	print_help(void)
 	printf("  -t		--  Sort output by modification time\n");
 	printf("  -d		--  List directories only\n");
 	printf("  -s		--  Print size of each file in bytes\n");
-	return (1);
+	free(g_tree);
+	exit (0);
 }
 
 static int	print_update(void)
@@ -65,9 +67,9 @@ int	tree_format(const char *str, t_tree *g_tree)
 
 	i = 0;
 	if (!strcmp(str, "--version"))
-		i = print_version();
+		i = print_version(g_tree);
 	else if (!strcmp(str, "--help") || !strcmp(str, "-h"))
-		i = print_help();
+		i = print_help(g_tree);
 	else if (!strcmp(str, "--update"))
 		i = print_update();
 	else if (!strcmp(str, "-r"))

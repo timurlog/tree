@@ -154,7 +154,7 @@ Execute this Command
 | `--version`                | Displays the version of the tree.                                      |
 | `--update`                 | Updates the tree command.                                              |
 | `directory name`           | Displays the directory tree hierarchy.                                 |
-<!-- | `-d`                       | Lists only directories.                                                | -->
+| `-d`                       | Lists only directories.                                                |
 <!-- | `-t`                       | Sorts the output by last modification time rather than alphabetically. | -->
 <!-- | `-s`                       | Print the size of each file along with the name.                       | -->
 <!-- | `-r`                       | Sort the output in reverse alphabetic order.                           | -->
@@ -176,7 +176,7 @@ _This project does not implement all the options available in the original `tree
     - [x] `--help`
     - [x] `--version`
     - [x] `--update`
-    - [ ] `-d`
+    - [x] `-d`
     - [ ] `-t`
     - [ ] `-s`
     - [ ] `-r`

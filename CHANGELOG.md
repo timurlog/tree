@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.1.3
+
+### Added or Changed
+- Code optimization
+- Added `-d` (Lists only directories)
+
 ## v0.1.2
 
 ### Added or Changed

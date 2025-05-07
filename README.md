@@ -62,8 +62,8 @@
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
-        <!-- <li><a href="#prerequisites">Prerequisites</a></li> -->
-        <li><a href="#installation">Installation</a></li>
+        <li><a href="#linux/macos-installation">Installation</a></li>
+        <li><a href="#update">Update</a></li>
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
@@ -112,7 +112,7 @@ The project is designed to be simple and portable.
 
 Here are the steps to follow to install `tree` on your 42 Linux/macOS machine.
 
-### Linux/macOS Installation Only
+### Linux/macOS Installation
 
 Execute this Command
 
@@ -127,11 +127,6 @@ Execute this Command
    ```sh
    bash -c "$(curl -fsSL https://raw.github.com/timurlog/tree/main/bin/update.sh)"
    ```
-<!-- 2. Run the `install.sh` script 
-
-   ```sh
-   bash bin/install.sh
-   ``` -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

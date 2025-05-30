@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.1.4
+
+### Added or Changed
+- Added `-s` (Print the size of each file along with the name.)
+- Update README.md
+
 ## v0.1.3
 
 ### Added or Changed

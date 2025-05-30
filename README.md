@@ -149,7 +149,7 @@ Execute this Command
 | `directory name`           | Displays the directory tree hierarchy.                                 |
 | `-d`                       | Lists only directories.                                                |
 <!-- | `-t`                       | Sorts the output by last modification time rather than alphabetically. | -->
-<!-- | `-s`                       | Print the size of each file along with the name.                       | -->
+| `-s`                       | Print the size of each file along with the name.                       |
 <!-- | `-r`                       | Sort the output in reverse alphabetic order.                           | -->
 
 
@@ -171,7 +171,7 @@ _This project does not implement all the options available in the original `tree
     - [x] `--update` Updates the tree command
     - [x] `-d` Lists only directories
     - [ ] `-t` Sorts the output by last modification time rather than alphabetically
-    - [ ] `-s` Print the size of each file along with the name
+    - [x] `-s` Print the size of each file along with the name
     - [ ] `-r` Sort the output in reverse alphabetic order
 
 See the [open issues](https://github.com/timurlog/tree/issues) for a full list of proposed features (and known issues).

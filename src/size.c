@@ -6,7 +6,7 @@
 /*   By: tilogie <tilogie@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/30 15:01:55 by tilogie           #+#    #+#             */
-/*   Updated: 2025/05/30 15:18:33 by tilogie          ###   ########.fr       */
+/*   Updated: 2025/05/30 23:10:04 by tilogie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,9 +50,9 @@ char	*folder_size_cal(const char *path)
 	total_size = folder_size_sum(path);
 	size_kib = total_size / 1024.0;
 	if (size_kib < 1024.0)
-		snprintf(buf, sizeof(buf), "\033[0;95m[%.1fKiB]\033[0;39m ", size_kib);
+		snprintf(buf, sizeof(buf), "\033[0;96m[%-6.1fKiB]\033[0;39m ", size_kib);
 	else
-		snprintf(buf, sizeof(buf), "\033[0;95m[%.2fMiB]\033[0;39m ", size_kib / 1024.0);
+		snprintf(buf, sizeof(buf), "\033[0;96m[%-6.2fMiB]\033[0;39m ", size_kib / 1024.0);
 	return (buf);
 }
 
@@ -66,9 +66,9 @@ char	*size_cal(const char *path)
 	{
 		size_kib = st.st_size / 1024.0;
 		if (size_kib < 1024.0)
-			snprintf(buf, sizeof(buf), "\033[0;96m[%.1fKiB]\033[0;39m ", size_kib);
+			snprintf(buf, sizeof(buf), "\033[0;96m[%-6.1fKiB]\033[0;39m ", size_kib);
 		else
-			snprintf(buf, sizeof(buf), "\033[0;96m[%.2fMiB]\033[0;39m ", size_kib / 1024.0);
+			snprintf(buf, sizeof(buf), "\033[0;96m[%-6.2fMiB]\033[0;39m ", size_kib / 1024.0);
 		return (buf);
 	}
 	return ("");

@@ -148,8 +148,8 @@ Execute this Command
 | `--update`                 | Updates the tree command.                                              |
 | `directory name`           | Displays the directory tree hierarchy.                                 |
 | `-d`                       | Lists only directories.                                                |
-<!-- | `-t`                       | Sorts the output by last modification time rather than alphabetically. | -->
 | `-s`                       | Print the size of each file along with the name.                       |
+<!-- | `-t`                       | Sorts the output by last modification time rather than alphabetically. | -->
 <!-- | `-r`                       | Sort the output in reverse alphabetic order.                           | -->
 
 

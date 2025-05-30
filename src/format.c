@@ -6,7 +6,7 @@
 /*   By: tilogie <tilogie@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/04 01:25:59 by tilogie           #+#    #+#             */
-/*   Updated: 2025/05/07 15:11:57 by tilogie          ###   ########.fr       */
+/*   Updated: 2025/05/30 15:26:58 by tilogie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 static int	print_version(t_tree *g_tree)
 {
-	printf("tree version 0.1.3\n");
+	printf("tree version 0.1.4\n");
 	free(g_tree);
 	exit (0);
 }

@@ -6,7 +6,7 @@
 /*   By: tilogie <tilogie@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/02 16:00:19 by tilogie           #+#    #+#             */
-/*   Updated: 2025/05/07 03:10:01 by tilogie          ###   ########.fr       */
+/*   Updated: 2025/05/30 15:15:11 by tilogie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ static void	process_entry(const char *dir, const char *prefix, t_tree *g_tree, s
 	snprintf(path, sizeof(path), "%s/%s", dir, entry->d_name);
 	if (entry->d_type == DT_DIR)
 	{
-		printf("%s%s── \033[1;34m%s\033[0m\n", prefix, is_last ? "└" : "├", entry->d_name);
+		printf("%s%s── %s\033[1;34m%s\033[0m\n", prefix, is_last ? "└" : "├", g_tree->size ? folder_size_cal(path) : "", entry->d_name);
 		g_tree->dir_nbr += 1;
 		if (strcmp(entry->d_name, ".git") != 0)
 		{
@@ -49,7 +49,7 @@ static void	process_entry(const char *dir, const char *prefix, t_tree *g_tree, s
 	}
 	else if (!g_tree->dir_only && entry->d_type == DT_REG)
 	{
-		printf("%s%s── %s\n", prefix, is_last ? "└" : "├", entry->d_name);
+		printf("%s%s── %s%s\n", prefix, is_last ? "└" : "├", g_tree->size ? size_cal(path) : "", entry->d_name);
 		g_tree->file_nbr += 1;
 	}
 }
